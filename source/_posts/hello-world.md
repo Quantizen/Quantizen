@@ -242,6 +242,15 @@ npm install -g hexo-cli@latest
 npm install
 ```
 
+## 移植到 Notrious
+
+1. 參見[Nitrous在线生成Hexo](http://pyy.io/2014/09/18/Nitrous-Hexo/)。
+2. 在本地和 Nitrous 分別設置遠程倉庫地址：`git remote add <rep-name> your-blog-github-url`，`git checkout -b blog`創建新的分支`blog`存放代碼。
+3. 要注意`.gitignore`中的內容。本地確定現在是在`blog`的分支，`git add .`，`git commit -m "add all files"`，而後確定有提交的權限，`git push <rep-name> blog` (`-f` force)。
+4. 在 Nitrous 端刪除和本地提交衝突的文件，如`rm -rf themes`等文件夾以及`rm .gitignore`等文件。而後`git pull <rep-name> blog` (`-p`好像不好使，所以之前有一步手動刪除了衝突項。)
+5. Nitrous 反應還是太慢了，不如本地啊。
+6. 如果本地主題是`git clone`來的，則不會被上傳到`blog`，故需要在 Nitrous 端重新下載。不過最好的方法還是刪除本地主題下的`.git`文件，因爲一般主題都自己調過。調過哪裏還都忘了，在 Nitrous 重新調很費事兒。
+
 [karl]:http://yuche.me/introducing-kael-customization/
 
 [noinstall]:http://blog.fens.me/nodejs-enviroment/
