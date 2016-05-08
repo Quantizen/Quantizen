@@ -244,12 +244,31 @@ npm install
 
 ## 移植到 Notrious
 
-1. 參見[Nitrous在线生成Hexo](http://pyy.io/2014/09/18/Nitrous-Hexo/)。
+1. 參見[Nitrous在线生成Hexo](http://pyy.io/2014/09/18/Nitrous-Hexo/)。關聯自己博客所在 github [並添加`SSH`到 github](https://community.nitrous.io/docs/connect-to-github)。
 2. 在本地和 Nitrous 分別設置遠程倉庫地址：`git remote add <rep-name> your-blog-github-url`，`git checkout -b blog`創建新的分支`blog`存放代碼。
 3. 要注意`.gitignore`中的內容。本地確定現在是在`blog`的分支，`git add .`，`git commit -m "add all files"`，而後確定有提交的權限，`git push <rep-name> blog` (`-f` force)。
 4. 在 Nitrous 端刪除和本地提交衝突的文件，如`rm -rf themes`等文件夾以及`rm .gitignore`等文件。而後`git pull <rep-name> blog` (`-p`好像不好使，所以之前有一步手動刪除了衝突項。)
-5. Nitrous 反應還是太慢了，不如本地啊。
+5. 以後只需要`git pull <rep-name> blog`或`git push <rep-name> blog`就可以了，很方便。但Nitrous 反應還是太慢了，不如本地啊。
 6. 如果本地主題是`git clone`來的，則不會被上傳到`blog`，故需要在 Nitrous 端重新下載。不過最好的方法還是刪除本地主題下的`.git`文件，因爲一般主題都自己調過。調過哪裏還都忘了，在 Nitrous 重新調很費事兒。
+7. 整個過程中也可能遇到要刪除分支，`git branch -D master`。
+
+# 動態博客
+
+可參見 [J.Zhou 的博客](https://zmy.im/archives/2015/02/20.html)，typecho + digitalocean，及 [typecho + docker](https://zmy.im/archives/2016/03/119.html). 或參見 [Holic 的介紹](https://blog.feixueacg.com/heroku-deploy-php/)，typecho + heroku. 或參見 [imcczy 的 docker 學習筆記](http://imcczy.com/docker_learning.html)，typecho + docker.
+
+## 博客系統
+
+1. [typecho](http://forum.typecho.org/viewforum.php?f=24&start=25)
+2. ghost，沒有自己的評論系統？
+
+## Cloud Server
+
+0. [heroku](https://dashboard.heroku.com/apps)
+1. AWS
+2. [digitalocean](https://www.digitalocean.com/)，需驗證付款方式
+3. 時速雲
+4. 阿裏雲
+5. docker
 
 [karl]:http://yuche.me/introducing-kael-customization/
 

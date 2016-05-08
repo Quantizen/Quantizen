@@ -51,6 +51,10 @@ apm install #有時好像需要 npm install
 3. latex-plus：編譯，內置瀏覽，更新緩慢
 4. latex-tool：編譯，[調用Skim瀏覽](https://github.com/msiniscalchi/atom-latextools/issues/26)，更新較快，仿 [ST3 的同名插件](https://github.com/SublimeText/LaTeXTools)。
 
+### Nitrous
+
+1. [Nitrogen](https://community.nitrous.io/docs/installing-the-nitrogen-atom-plugin-d9a97d12-b6ab-4ad2-b219-45f05451d692)，在本地直接調用自己的在線應用。
+
 ## 操作快捷鍵
 
 1. 不同文件間切換：Go to the Atom menu > Open Your Keymap and add:
