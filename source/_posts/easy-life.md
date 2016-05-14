@@ -35,6 +35,7 @@ tags: [life, technology]
 
 1. 設置郵件、提醒等軟件爲開機啓動。
 2. 使用workflow軟件，如Mac下的Alfred及Windows下的[Wox][githubwox]。更多見mac神器一文。
+3. 免去到處尋找歌曲的免費源：[listen1](https://github.com/listen1/listen1_chrome_extension) 
 
 [^anote1]: 吃別人嚼過的，省得自己去琢磨了。
 

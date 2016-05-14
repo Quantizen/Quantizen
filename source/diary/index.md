@@ -4,6 +4,14 @@ comments: false
 ---
 
 
+> 節儉，或讓其他生靈陷於塗炭。
+>
+> <cite> Wednesday, May 11, 2016 </cite>
+
+> 大腦是可塑的，所以才要塑造它。意識到了真空，才要修持以達妙有。
+>
+> <cite> Tuesday, May 10, 2016 </cite>
+
 <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=18003388&auto=0&height=32"></iframe></p>
 
 > 諸法無常，當精進不怠。

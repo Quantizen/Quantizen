@@ -212,6 +212,19 @@ var args = [ '-f', 'markdown_strict+footnotes+tex_math_dollars', '-t', 'html', '
 
 Hexo 的 Pandoc 的插件不能识别 cabal 安装的 Pandoc，暂时改为用 markdown-it 插件。
 
+## Markdown-it
+
+### Add new plugins
+
+Let's take `markdown-it-task-lists` for example.
+
+1. go to the folder where `markdown-it` was installed in hexo;
+2. add `"markdown-it-task-lists": "^1.2.0",` in package.json;
+3. run `npm install` in the folder of `hexo-render-markdown-it`
+4. add `-markdown-it-task-lists` in the configuration of markdown-it in `_config.yml`.
+
+Refer to [Support plugin with 3 test cases](https://github.com/celsomiranda/hexo-renderer-markdown-it/pull/4/commits/b3857c9e4a4e2333eb90ae97d410cbe0b6e8ce98)
+
 ## SSH
 
 [Permision denied (publickey)][pdkey]
