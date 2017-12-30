@@ -91,7 +91,7 @@
 <meta property="og:url" content="http://quantizen.github.io/2016/01/24/reference/index.html">
 <meta property="og:site_name" content="Eden">
 <meta property="og:description" content="工具可以塑造人，可以拯救人。">
-<meta property="og:locale" content="zh-tw">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-12-20T20:01:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tex中的參考文獻">
@@ -116,7 +116,7 @@
   <title> Tex中的參考文獻 | Eden </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -181,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分類
+            分类
           </a>
         </li>
       
@@ -191,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            標籤
+            标签
           </a>
         </li>
       
@@ -201,7 +201,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            關於
+            关于
           </a>
         </li>
       
@@ -224,7 +224,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            檢索
+            搜索
           </a>
         </li>
       
@@ -287,7 +287,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">發表於</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-24T14:17:02+01:00" content="2016-01-24">
               2016-01-24
             </time>
@@ -299,7 +299,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分類於</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/tex/" itemprop="url" rel="index">
@@ -361,8 +361,8 @@
 <li>如果您使用Linux或Mac OS X操作系統，您也可以通過項目所提供的Makefile腳本進行安裝，只需在項目所在目錄下運行以下命令：<code>sudo make</code>，註意需要通過sudo切換root權限。</li>
 </ol>
 <h2 id="安裝-bbx-cbx文件"><a href="#安裝-bbx-cbx文件" class="headerlink" title="安裝.bbx, .cbx文件"></a>安裝<code>.bbx, .cbx</code>文件</h2><p>一般能在<code>CTAN</code>上找到，然後用<code>tlmgr install</code>安裝即可。手動可以參考SE上<a href="http://tex.stackexchange.com/a/10720/34983" target="_blank" rel="noopener">這個回答</a>。</p>
-<h1 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h1><h2 id="Bibtex"><a href="#Bibtex" class="headerlink" title="Bibtex"></a><code>Bibtex</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[aps,prl,reprint]&#123;revtex4-1&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\title&#123;Some random title&#125;</span><br><span class="line">\author&#123;Me&#125;</span><br><span class="line">\email&#123;mail@example.com&#125;</span><br><span class="line">\author&#123;Myself&#125;</span><br><span class="line">\author&#123;Someone Else&#125;</span><br><span class="line">\affiliation&#123;A University&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;abstract&#125;</span><br><span class="line">Here I tell what I have done... And I have done a lot but it is hard to tell what exactly I have done...</span><br><span class="line">\end&#123;abstract&#125;</span><br><span class="line"></span><br><span class="line">\maketitle</span><br><span class="line">\cite&#123;article-minimal&#125;</span><br><span class="line"></span><br><span class="line">\bibliographystyle&#123;apsrev4-1&#125; % Tell bibtex which bibliography style to use</span><br><span class="line">\bibliography&#123;xampl&#125; % Tell bibtex which .bib file to use (this one is some example file in TexLive&apos;s file tree)</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Biblatex"><a href="#Biblatex" class="headerlink" title="Biblatex"></a><code>Biblatex</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[]&#123;article&#125;</span><br><span class="line"></span><br><span class="line">\usepackage[</span><br><span class="line">    style=phys,</span><br><span class="line">    sorting=ynt, %排序方法為year name title</span><br><span class="line">    %biblabel=brackets,</span><br><span class="line">    %sortlocale=de_DE,</span><br><span class="line">    %natbib=true,</span><br><span class="line">    url=false,</span><br><span class="line">    doi=false,</span><br><span class="line">    %eprint=false,</span><br><span class="line">    firstinits=false,</span><br><span class="line">    maxnames=50 %盡量顯示所有作者</span><br><span class="line">]&#123;biblatex&#125;</span><br><span class="line"></span><br><span class="line">\DeclareNameAlias&#123;default&#125;&#123;first-last&#125; %作者名稱格式</span><br><span class="line">\DeclareFieldFormat&#123;labelnumberwidth&#125;&#123;&#123;#1&#125;\adddot&#125; %文獻序號格式</span><br><span class="line">      \setlength&#123;\biblabelsep&#125;&#123;10 pt&#125;</span><br><span class="line"></span><br><span class="line">\addbibresource&#123;mypublish.bib&#125;</span><br><span class="line"></span><br><span class="line">\usepackage[]&#123;hyperref&#125;</span><br><span class="line">\hypersetup&#123;</span><br><span class="line">    colorlinks=true,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\nocite&#123;*&#125;</span><br><span class="line">\printbibliography[title=&#123;all reference&#125;] %這兩句打印所有參考文獻</span><br><span class="line">\citetitle&#123;reference1&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h1><h2 id="Bibtex"><a href="#Bibtex" class="headerlink" title="Bibtex"></a><code>Bibtex</code></h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">[aps,prl,reprint]</span><span class="string">&#123;revtex4-1&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;Some random title&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Me&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">email</span><span class="string">&#123;mail@example.com&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Myself&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Someone Else&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">affiliation</span><span class="string">&#123;A University&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;abstract&#125;</span></span></span><br><span class="line">Here I tell what I have done... And I have done a lot but it is hard to tell what exactly I have done...</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;abstract&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">maketitle</span></span></span><br><span class="line"><span class="tag">\<span class="name">cite</span><span class="string">&#123;article-minimal&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;apsrev4-1&#125;</span></span> <span class="comment">% Tell bibtex which bibliography style to use</span></span><br><span class="line"><span class="tag">\<span class="name">bibliography</span><span class="string">&#123;xampl&#125;</span></span> <span class="comment">% Tell bibtex which .bib file to use (this one is some example file in TexLive's file tree)</span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="Biblatex"><a href="#Biblatex" class="headerlink" title="Biblatex"></a><code>Biblatex</code></h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">[]</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">[</span></span></span><br><span class="line"><span class="tag"><span class="string">    style=phys,</span></span></span><br><span class="line"><span class="tag"><span class="string">    sorting=ynt, %排序方法為year name title</span></span></span><br><span class="line"><span class="tag"><span class="string">    %biblabel=brackets,</span></span></span><br><span class="line"><span class="tag"><span class="string">    %sortlocale=de_DE,</span></span></span><br><span class="line"><span class="tag"><span class="string">    %natbib=true,</span></span></span><br><span class="line"><span class="tag"><span class="string">    url=false,</span></span></span><br><span class="line"><span class="tag"><span class="string">    doi=false,</span></span></span><br><span class="line"><span class="tag"><span class="string">    %eprint=false,</span></span></span><br><span class="line"><span class="tag"><span class="string">    firstinits=false,</span></span></span><br><span class="line"><span class="tag"><span class="string">    maxnames=50 %盡量顯示所有作者</span></span></span><br><span class="line"><span class="tag"><span class="string">]</span><span class="string">&#123;biblatex&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">DeclareNameAlias</span><span class="string">&#123;default&#125;</span><span class="string">&#123;first-last&#125;</span></span> <span class="comment">%作者名稱格式</span></span><br><span class="line"><span class="tag">\<span class="name">DeclareFieldFormat</span><span class="string">&#123;labelnumberwidth&#125;</span><span class="string">&#123;&#123;#1&#125;</span></span><span class="tag">\<span class="name">adddot</span></span>&#125; <span class="comment">%文獻序號格式</span></span><br><span class="line">      <span class="tag">\<span class="name">setlength</span><span class="string">&#123;\biblabelsep&#125;</span><span class="string">&#123;10 pt&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">addbibresource</span><span class="string">&#123;mypublish.bib&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">[]</span><span class="string">&#123;hyperref&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">hypersetup</span><span class="string">&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">    colorlinks=true,</span></span></span><br><span class="line"><span class="tag"><span class="string">&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">nocite</span><span class="string">&#123;*&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">printbibliography</span><span class="string">[title=&#123;all reference&#125;]</span></span> <span class="comment">%這兩句打印所有參考文獻</span></span><br><span class="line"><span class="tag">\<span class="name">citetitle</span><span class="string">&#123;reference1&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
 <p>個人決定使用<code>biblatex</code>的方案。投稿或傳送給其他人時，將生成的<code>.bbl</code>文件中的內容拷到或引用到主文件中並註釋掉<code>bibtex，biblatex</code>的內容即可。</p>
 <p><code>biblatex</code>參考文獻格式設計很好寫，具體功能實現可以從別人的格式定義文件中找尋方法。</p>
 <blockquote>
@@ -483,10 +483,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目錄
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
+            站点概览
           </li>
         </ul>
       
@@ -502,8 +502,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">60</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-count">61</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
@@ -511,7 +511,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">14</span>
-                <span class="site-state-item-name">分類</span>
+                <span class="site-state-item-name">分类</span>
               </a>
             </div>
           
@@ -519,8 +519,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
-                <span class="site-state-item-name">標籤</span>
+                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-name">标签</span>
               </a>
             </div>
           
@@ -575,11 +575,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  主題 -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
