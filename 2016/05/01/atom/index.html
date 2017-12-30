@@ -1,0 +1,861 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="software," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="當接觸到一個新的編輯器的時候怎樣快速上手呢？">
+<meta name="keywords" content="software">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Atom">
+<meta property="og:url" content="http://quantizen.github.io/2016/05/01/atom/index.html">
+<meta property="og:site_name" content="Eden">
+<meta property="og:description" content="當接觸到一個新的編輯器的時候怎樣快速上手呢？">
+<meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2017-11-16T17:07:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Atom">
+<meta name="twitter:description" content="當接觸到一個新的編輯器的時候怎樣快速上手呢？">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Atom | Eden </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Eden</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-diary">
+          <a href="/diary" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            日記
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            關於
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-message">
+          <a href="/message" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-envelope"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            檢索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Atom
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-05-01T11:34:45+02:00" content="2016-05-01">
+              2016-05-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/mac/" itemprop="url" rel="index">
+                    <span itemprop="name">mac</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/01/atom/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/01/atom/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>當接觸到一個新的編輯器的時候怎樣快速上手呢？</p>
+</blockquote>
+<a id="more"></a>
+<p>明確目的：自己用編輯器無非寫一些<code>.md, .tex</code>文件。</p>
+<h2 id="安裝插件"><a href="#安裝插件" class="headerlink" title="安裝插件"></a>安裝插件</h2><p>首要之急是安裝所需要的插件。安裝插件的快捷鍵<code>Command+Shift+P</code><a href="https://segmentfault.com/q/1010000000743953" target="_blank" rel="noopener">但發現安裝插件總是失敗</a>，難道和偉大的牆有關？那麼只能手動安裝了，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.atom/packages</span><br><span class="line">git clone &lt;你想安装的 Package 的仓库链接&gt; # 比如：git clone https://atom.io/packages/emmet，github 版本有時會沒有 setting 項。</span><br><span class="line">cd &lt;Package 路径&gt; # cd emmet-atom</span><br><span class="line">apm install #有時好像需要 npm install</span><br></pre></td></tr></table></figure>
+<p>或許可以寫一個 Alfred 的 workflow 精簡一下。</p>
+<h2 id="插件管理"><a href="#插件管理" class="headerlink" title="插件管理"></a>插件管理</h2><p>安裝完插件之後就需要調配以適合自己的習慣。</p>
+<ol>
+<li>Open the Settings VIew (<code>Cmd+,</code> on OS X, <code>Ctrl+,</code> on other platforms)</li>
+<li>Click the Packages tab</li>
+<li>Type the name of the package into the filter box</li>
+<li>Find the package in the list</li>
+</ol>
+<p>搜索插件：<a href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=" target="_blank" rel="noopener">search atom packages</a></p>
+<p>插件更新：<a href="https://atom.io/packages/auto-update-packages" target="_blank" rel="noopener">auto-update-package</a></p>
+<h2 id="插件推薦"><a href="#插件推薦" class="headerlink" title="插件推薦"></a>插件推薦</h2><h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><ol>
+<li>markdown-assistant，qiniu-uploader：輔助工具，上傳圖片並生成外鏈而後插入。目前只支持截取的圖片，<a href="https://github.com/knightli/markdown-assistant/issues/4" target="_blank" rel="noopener">不支持本地圖片</a>。</li>
+<li>markdown-previewer-plus，支持更多格式的預覽，對於公式可以<a href="https://github.com/Galadirith/markdown-preview-plus/blob/v2.4.0/docs/math.md" target="_blank" rel="noopener">自定義一些 Macro</a> 以簡便輸入。</li>
+<li>markdown-writer：方便書寫，也可管理博客（需要插件 hexo-generator-atom-markdown-writer-meta，該插件並不支持新的 hexo）。</li>
+<li>markdown-scroll-sync：單向同步滾動。</li>
+<li>markdown-preview-enhanced：包括且不限於格式預覽，雙向同步滾動，格式打印，KaTex 支持。</li>
+<li>zotero-citations：引用 zotero 中參考文獻。</li>
+</ol>
+<h3 id="Tex"><a href="#Tex" class="headerlink" title="Tex"></a>Tex</h3><ol>
+<li>language-latex：語法高亮</li>
+<li>latexer：自動補全，包括公式引用參考文獻</li>
+<li>latex-plus：編譯，內置瀏覽，更新緩慢</li>
+<li>latex-tool：編譯，<a href="https://github.com/msiniscalchi/atom-latextools/issues/26" target="_blank" rel="noopener">調用Skim</a>或Preview瀏覽，更新較快，仿 <a href="https://github.com/SublimeText/LaTeXTools" target="_blank" rel="noopener">ST3 的同名插件</a>。目前不支持自動補全。</li>
+</ol>
+<h3 id="編程"><a href="#編程" class="headerlink" title="編程"></a>編程</h3><ol>
+<li>Hydrogen：動態編程，支持<code>Python, R</code>等語言。</li>
+</ol>
+<h3 id="Nitrous"><a href="#Nitrous" class="headerlink" title="Nitrous"></a>Nitrous</h3><ol>
+<li><a href="https://community.nitrous.io/docs/installing-the-nitrogen-atom-plugin-d9a97d12-b6ab-4ad2-b219-45f05451d692" target="_blank" rel="noopener">Nitrogen</a>，在本地直接調用自己的在線應用。</li>
+</ol>
+<h2 id="操作快捷鍵"><a href="#操作快捷鍵" class="headerlink" title="操作快捷鍵"></a>操作快捷鍵</h2><p><a href="https://github.com/nwinkler/atom-keyboard-shortcuts" target="_blank" rel="noopener">Atom Keyboard Shortcuts lists</a>.</p>
+<ol>
+<li><p>不同文件間切換：Go to the Atom menu &gt; Open Your Keymap and add:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&apos;body&apos;:</span><br><span class="line">  &apos;ctrl-tab&apos;: &apos;pane:show-next-item&apos;</span><br><span class="line">  &apos;ctrl-shift-tab&apos;: &apos;pane:show-previous-item&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>移動到文件開始：<code>cmd+up</code>；移動到文件結尾：<code>cmd+down</code>。</p>
+</li>
+<li>選取文件中當前單詞所有出現：<code>ctrl-cmd-G</code>。</li>
+<li>多行操作：<code>cmd-shift-L</code>。</li>
+<li>切換編碼：<code>ctrl-shift-U</code>。</li>
+<li>插入<code>linK, Image, Table</code>：<code>cmd+shift+k, i, t</code>。</li>
+<li>註釋 html 代碼：<code>cmd+/</code>。</li>
+<li><code>esc</code>關閉彈出的彈出的面板。</li>
+<li>open Command Platte: <code>shift-cmd-p</code>.</li>
+</ol>
+<p>因爲不同插件之間的快捷鍵可能有衝突，這點需要注意。</p>
+<h2 id="聯繫-Alfred"><a href="#聯繫-Alfred" class="headerlink" title="聯繫 Alfred"></a>聯繫 Alfred</h2><p><a href="https://github.com/franzheidl/alfred-workflows/tree/master/open-with-atom" target="_blank" rel="noopener">Alfred workflow</a></p>
+<h2 id="對比-Sublime"><a href="#對比-Sublime" class="headerlink" title="對比 Sublime"></a>對比 Sublime</h2><h3 id="優點"><a href="#優點" class="headerlink" title="優點"></a>優點</h3><ol>
+<li>相當於一個 web app，這使得內置預覽<code>.md, .pdf</code>文件等都很方便，也可以在不同 screen 中預覽，即取消 split。</li>
+<li>基於 Github，發展前景較好。</li>
+<li>可以<a href="http://www.jianshu.com/p/2ee34d8da142" target="_blank" rel="noopener">自定義代碼段 snippets</a>，這能替代一些鍵盤快捷工具，如<code>TextExpander</code>。如果平常使用英文輸入法，這將是很贊的一個功能。</li>
+<li>可類似 web 的界面自定義。</li>
+<li><a href="https://github.com/transcranial/atom-transparency" target="_blank" rel="noopener">Atom</a> <a href="https://github.com/vhanla/SublimeTextTrans" target="_blank" rel="noopener">SublimeText</a> 目前都不能定義背景透明。</li>
+</ol>
+<h3 id="缺點"><a href="#缺點" class="headerlink" title="缺點"></a>缺點</h3><ol>
+<li>打開較慢，每次都<a href="https://github.com/atom/atom/issues/1847" target="_blank" rel="noopener">打開一個目錄</a>。電腦發燙。</li>
+<li>插件<code>markdown-writer</code>依然不如 Sublime 的<code>markdown-editing</code>。但<code>markdown-writer</code>管理博客時對已有標籤的提示還是很好的，有時自己會忘了寫過什麼標籤了。</li>
+<li>不支持<a href="https://github.com/atom/atom/issues/5967" target="_blank" rel="noopener">三指查單詞</a>，似乎和<a href="https://github.com/electron/electron/issues/4772" target="_blank" rel="noopener">electron有關</a>。或用插件 <a href="https://github.com/kohkimakimoto/atom-dictionary" target="_blank" rel="noopener">dictionary</a>，或用插件 <a href="https://github.com/aki77/atom-dict" target="_blank" rel="noopener">dict</a>。更推薦前者。</li>
+<li>句子較長時語法高亮有問題。</li>
+</ol>
+<h2 id="主題推薦"><a href="#主題推薦" class="headerlink" title="主題推薦"></a>主題推薦</h2><ol>
+<li>Atom 的<code>Improved Chester Atom</code>;</li>
+<li>Sublime 的 <code>Material</code>;</li>
+</ol>
+<p>綜上，決定轉向 Atom。Atom 即使有一些小 bug 長時間不修復，但插件的發展還是 Sublime 不能企及的。</p>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><ol>
+<li><a href="https://towdium.github.io/blog/about-markdown-pandoc-latex/" target="_blank" rel="noopener">关于 markdown， pandoc 和 LaTeX 的入门安利</a></li>
+<li><a href="http://www.jeffjade.com/2016/03/03/2016-03-02-how-to-use-atom/" target="_blank" rel="noopener">新编码神器Atom使用纪要</a></li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/software/" rel="tag">#software</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/22/Kindlechain/" rel="next" title="Kindle鏈">
+                <i class="fa fa-chevron-left"></i> Kindle鏈
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/06/cannian/" rel="prev" title="殘念">
+                殘念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7rflrv.com1.z0.glb.clouddn.com/20101114183645-857105338.jpg"
+               alt="Solojoker" />
+          <p class="site-author-name" itemprop="name">Solojoker</p>
+          <p class="site-description motion-element" itemprop="description">成爲自己的光</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/">
+              <span class="site-state-item-count">60</span>
+              <span class="site-state-item-name">文章</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">分類</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝插件"><span class="nav-number">1.</span> <span class="nav-text">安裝插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件管理"><span class="nav-number">2.</span> <span class="nav-text">插件管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件推薦"><span class="nav-number">3.</span> <span class="nav-text">插件推薦</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown"><span class="nav-number">3.1.</span> <span class="nav-text">Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tex"><span class="nav-number">3.2.</span> <span class="nav-text">Tex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#編程"><span class="nav-number">3.3.</span> <span class="nav-text">編程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nitrous"><span class="nav-number">3.4.</span> <span class="nav-text">Nitrous</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作快捷鍵"><span class="nav-number">4.</span> <span class="nav-text">操作快捷鍵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聯繫-Alfred"><span class="nav-number">5.</span> <span class="nav-text">聯繫 Alfred</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#對比-Sublime"><span class="nav-number">6.</span> <span class="nav-text">對比 Sublime</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#優點"><span class="nav-number">6.1.</span> <span class="nav-text">優點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺點"><span class="nav-number">6.2.</span> <span class="nav-text">缺點</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主題推薦"><span class="nav-number">7.</span> <span class="nav-text">主題推薦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考"><span class="nav-number">8.</span> <span class="nav-text">參考</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Solojoker</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'solojoker';
+      var disqus_identifier = '2016/05/01/atom/';
+      var disqus_title = 'Atom';
+      var disqus_url = 'http://quantizen.github.io/2016/05/01/atom/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
